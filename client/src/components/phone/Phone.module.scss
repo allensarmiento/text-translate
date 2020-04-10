@@ -1,12 +1,12 @@
 .Phone {
   align-items: center;
-  background: #000;
+  background: #232323;
   border: 1px solid #000;
-  border-radius: 20px;
+  border-radius: 24px;
   display: flex;
   justify-content: center;
-  width: 300px;
-  height: 600px;
+  width: 350px;
+  height: 650px;
 
   .Screen {
     background: #fff;
@@ -14,15 +14,60 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    width: 90%;
+    padding: 8px;
+    width: 92%;
     height: 96%;
   }
 
   .MessageContainer {
     flex: 1;
     padding: 10px;
+
+    .ReceivedTextBubbleContainer, .SentTextBubbleContainer {
+      display: flex;
+    }
+
+    .TextBubble {
+      width: 80%;
+    }
+
+    .ReceivedTextBubbleContainer {
+      justify-content: flex-start;
+
+      .TextBubble {
+        background: #d3d3d3;
+        color: black;
+      }
+    }
+
+    .SentTextBubbleContainer {
+      justify-content: flex-end;
+
+      .TextBubble {
+        background: #0055ff;
+        color: #fff;
+      }
+    }
   }
 
   .InputContainer {
+    display: flex;
+
+    input {
+      border: 1px solid grey;
+      border-radius: 25px;
+      flex-grow: 1;
+      font-size: 0.8rem;
+      outline-width: 0;
+      padding: 4px 8px;
+      margin-right: 4px;
+    }
+
+    .SendBtn {
+      background: blue;
+      border-radius: 25px;
+      color: #fff;
+      padding: 4px 8px;
+    }
   }
 }

@@ -1,0 +1,18 @@
+.App {
+  background: #e4e4e4;
+  height: 100vh;
+  padding: 50px;
+
+  .Title {
+    text-align: center;
+  }
+
+  .PhoneGroup {
+    display: flex;
+    justify-content: center;
+
+    .PhoneContainer {
+      padding: 20px;
+    }
+  }
+}
