@@ -13,6 +13,19 @@
 
     .PhoneContainer {
       padding: 20px;
+
+      .LanguageContainer {
+        display: flex;
+        padding: 8px;
+
+        h3 {
+          margin-right: 4px;
+        }
+
+        input {
+          flex-grow: 1;
+        }
+      }
     }
   }
 }

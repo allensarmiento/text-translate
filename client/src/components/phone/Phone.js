@@ -18,12 +18,12 @@ const Phone = props => {
         <div className={styles.MessageContainer}>
           {props.messages.map((phoneMessage, messageIndex) => (
             <div 
+              key={messageIndex}
               className={phoneMessage.type === 'received' ? 
                 styles.ReceivedTextBubbleContainer : 
                 styles.SentTextBubbleContainer}
             >
               <TextBubble 
-                key={messageIndex}
                 className={styles.TextBubble}
               >
                 {phoneMessage.message}
