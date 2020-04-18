@@ -10,6 +10,11 @@
   .PhoneGroup {
     display: flex;
     justify-content: center;
+    overflow: scroll;
+
+    @media screen and (max-width: 850px) {
+      justify-content: flex-start;
+    }
 
     .PhoneContainer {
       padding: 20px;
